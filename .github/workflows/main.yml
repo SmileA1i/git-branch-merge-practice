@@ -1,0 +1,17 @@
+name: Simple CI Build and Test
+
+on: [push] # 触发条件：每次推送代码时运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 在一个全新的Ubuntu虚拟机中运行
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run a build step
+        run: echo "Building the project..."
+
+      - name: Run tests
+        run: echo "Running tests..."
