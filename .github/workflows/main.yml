@@ -1,10 +1,10 @@
 name: Simple CI Build and Test
 
-on: [push] # 触发条件：每次推送代码时运行
+on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest # 在一个全新的Ubuntu虚拟机中运行
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
